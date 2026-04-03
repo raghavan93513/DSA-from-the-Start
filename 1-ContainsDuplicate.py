@@ -1,3 +1,4 @@
+# Using Sets
 # Time complexity: O(n)
 # Space complexity: O(n)
 
@@ -11,6 +12,7 @@ class Solution:
                 my_set.add(nums[i])
         return False
 
+# Using Logic and Sets
 # Time complexity: O(n)
 # Space complexity: O(n)
 
