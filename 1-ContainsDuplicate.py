@@ -21,3 +21,5 @@ class Solution:
         if len(set(nums)) < len(nums):
             return True
         return False
+
+# Revised on 6th June 2026

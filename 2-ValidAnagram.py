@@ -9,6 +9,22 @@ class Solution:
 
         return sorted(s) == sorted(t)
 
+# Using Dictionary frequency counting
+# Time complexity: O(n + m)
+# Space complexity: O(1) since we have at most 26 different characters.
+
+class Solution:
+    def isAnagram(self, s: str, t: str) -> bool:
+        if len(s) != len(t):
+            return False
+        dict_s = {}
+        dict_t = {}
+        for i in range(len(s)):
+            dict_s[s[i]] = dict_s.get(s[i],0)+1
+            dict_t[t[i]] = dict_t.get(t[i],0)+1
+
+        return dict_s == dict_t
+
 # Using Hash Maps - Counter
 # Time complexity: O(n + m)
 # Space complexity: O(1) since we have at most 26 different characters.
@@ -30,22 +46,6 @@ class Solution:
 # o/p -> Counter({'r': 2, 'a': 2, 'c': 2, 'e': 1})
 
 # *********************************************************** #
-
-# Using Dictionary frequency counting
-# Time complexity: O(n + m)
-# Space complexity: O(1) since we have at most 26 different characters.
-
-class Solution:
-    def isAnagram(self, s: str, t: str) -> bool:
-        if len(s) != len(t):
-            return False
-        dict_s = {}
-        dict_t = {}
-        for i in range(len(s)):
-            dict_s[s[i]] = dict_s.get(s[i],0)+1
-            dict_t[t[i]] = dict_t.get(t[i],0)+1
-
-        return dict_s == dict_t
 
 # Using Fixed array frequency counting
 # Time complexity: O(n + m)
@@ -77,3 +77,5 @@ class Solution:
 # o/p -> [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
 
 # *********************************************************** #
+
+# Revised on 6th June 2026
