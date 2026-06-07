@@ -1,6 +1,7 @@
 # Using Sorted method
 # Time complexity: O(nlogn + mlogm)
 # Space complexity: O(n + m)
+# Sorted is small 's'
 
 class Solution:
     def isAnagram(self, s: str, t: str) -> bool:
@@ -28,6 +29,7 @@ class Solution:
 # Using Hash Maps - Counter
 # Time complexity: O(n + m)
 # Space complexity: O(1) since we have at most 26 different characters.
+# Counter is capital 'C'
 
 from collections import Counter
 
