@@ -47,6 +47,14 @@ class Solution:
                 j-=1
         return []
 
+#Using Enumerate
+# nums = [2,7,11,15]
+# thelist = []
+# for i,n in enumerate(nums):
+#     thelist.append([n,i])
+# print(thelist)
+# o/p -> [[2, 0], [7, 1], [11, 2], [15, 3]]
+
 # Using Hash Map
 # Time complexity: O(n)
 # Space complexity: O(n)
@@ -60,3 +68,5 @@ class Solution:
                 return [hashmap[diff],i]
             hashmap[n]=i
         return []
+
+# Revised on 8th June 2026
