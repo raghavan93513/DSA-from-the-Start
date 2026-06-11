@@ -26,6 +26,8 @@ class Solution:
 
         return dict_s == dict_t
 
+# Refer to - DSA-from-the-Start/Important Concepts/Counter.py for Counter implementation
+
 # Using Hash Maps - Counter
 # Time complexity: O(n + m)
 # Space complexity: O(1) since we have at most 26 different characters.
@@ -40,14 +42,7 @@ class Solution:
 
         return Counter(s) == Counter(t)
 
-# *********************************************************** #
-
-# from collections import Counter
-# s="racecar"
-# print(Counter(s))
-# o/p -> Counter({'r': 2, 'a': 2, 'c': 2, 'e': 1})
-
-# *********************************************************** #
+# Refer to - DSA-from-the-Start/Important Concepts/BigArray.py for BigArray implementation
 
 # Using Fixed array frequency counting
 # Time complexity: O(n + m)
@@ -71,13 +66,5 @@ class Solution:
         #     if i>0:
         #         return False
         # return True
-
-# *********************************************************** #
-
-# count = [0] * 26
-# print(count)
-# o/p -> [0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
-
-# *********************************************************** #
 
 # Revised on 6th June 2026
