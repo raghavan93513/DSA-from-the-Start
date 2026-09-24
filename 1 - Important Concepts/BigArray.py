@@ -9,3 +9,5 @@ freq = [[] for i in range(len(nums) + 1)]
 print(freq)
 
 # o/p -> [[], [], [], [], [], [], []]
+
+# Revised on 24th September 2026

@@ -32,15 +32,14 @@ print(rows[2])
 print(rows[3])
 # o/p -> set()
 
-Other types of defaultdict:
-
-defaultdict(list)
-defaultdict(int)
-defaultdict(float)
-defaultdict(str)
-defaultdict(bool)
-defaultdict(tuple)
-defaultdict(dict)
+# Other types of defaultdict:
+# defaultdict(list)
+# defaultdict(int)
+# defaultdict(float)
+# defaultdict(str)
+# defaultdict(bool)
+# defaultdict(tuple)
+# defaultdict(dict)
 
 mydict = defaultdict(dict)
 mydict[0] = {"a": 1, "b": 2}
@@ -54,3 +53,5 @@ print(mydict)
 #     0: {"a": 1, "b": 2},
 #     1: {"c": 3, "d": 4}
 # }
+
+# Revised on 24th September 2026
